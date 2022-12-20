@@ -27,16 +27,21 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "prepublishOnly": "nr build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "release": "bumpp --commit --push --tag && pnpm publish",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "preact": "^10.11.3"
   },
   "devDependencies": {
+    "@antfu/ni": "^0.18.8",
     "@preact/preset-vite": "^2.4.0",
     "@so1ve/eslint-config-react": "^0.32.3",
+    "bumpp": "^8.2.1",
     "eslint": "^8.29.0",
     "typescript": "^4.9.3",
     "vite": "^4.0.0",
@@ -44,7 +49,9 @@
   },
   "pnpm": {
     "peerDependencyRules": {
-      "ignoreMissing": ["@babel/core"]
+      "ignoreMissing": [
+        "@babel/core"
+      ]
     }
   }
 }
