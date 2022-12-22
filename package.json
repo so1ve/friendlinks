@@ -1,7 +1,16 @@
 {
   "name": "friendlinks",
   "version": "0.0.0",
+  "description": "Friendlinks component.",
   "type": "module",
+  "homepage": "https://github.com/so1ve/friendlinks#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/so1ve/friendlinks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/so1ve/friendlinks/issues"
+  },
   "sideEffects": false,
   "exports": {
     ".": {
